@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>FRIENDS GROUP</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Admin Panel (Zugang nur mit Code) -->
+  <button id="admin-link" class="admin-link" type="button">Admin Panel</button>
+
+  <!-- Musik an/aus (oben rechts) -->
+  <button id="sound" class="sound" type="button" aria-label="Musik stumm schalten" aria-pressed="false">
+    <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 9.5v5h3.6L11.5 19V5L6.6 9.5H3z" fill="currentColor"/>
+      <path d="M15 8.6a4.6 4.6 0 010 6.8M17.6 6a8.2 8.2 0 010 12" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </svg>
+    <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M3 9.5v5h3.6L11.5 19V5L6.6 9.5H3z" fill="currentColor"/>
+      <path d="M15.5 9.5l5 5M20.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  <main class="page">
+    <h1 class="title" id="title">FRIENDS GROUP</h1>
+    <section class="members" id="members" aria-label="Mitglieder"></section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <audio id="music" loop preload="auto"></audio>
+
+  <script src="members.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
