@@ -1,0 +1,5 @@
+Lege hier deine Musik-Datei rein, z. B. "song.mp3".
+
+Der Name muss zu script.js passen:
+  CONFIG.music.file = "music/song.mp3"
+Andere Datei? Dann dort einfach den Namen ändern (mp3, ogg, wav, m4a gehen).
